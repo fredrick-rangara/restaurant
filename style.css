@@ -22,3 +22,33 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.1);
 }
+
+/* Heading Selectors: Applies distinct fonts and sizes */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(46, 163, 91);
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1 rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Class Selector: Styles the general menu item */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;  /* Adds space between image, details, and price */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
