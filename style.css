@@ -52,3 +52,75 @@ h2 {
     margin-bottom: 1rem;
     border: 1px solid #ddd;
 }
+
+/* Pseudo-class Selector */
+.menu-item:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the images within menu items */
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 50%; /* Makes the images circular */
+    border: 3px solid #8c4646;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the new container holding dish name and description */
+.item-details {
+    flex-grow: 1;
+}
+
+/* Descendant Selector: Styles the paragraph within the menu item */
+.menu-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Specificity and Descendant Selector: Styles the dish name */
+.menu-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+/* Attribute Selector: Targets dishes that are special */
+[data-special="true"] {
+    border-left: 5px solid #8c4646;
+    background-color: #fff8f8;
+    box-shadow: 0 0 10px rgba(140, 70, 70, 0.3); /* Adds a subtle glow */
+}
+
+/* ID Selector: Targets a specific, highlighted item */
+#spicy-sensation {
+    border-color: #d9534f;
+    border-left: 5px solid #d9534f;
+    background-color: #fff5f5;
+    box-shadow: 0 0 10px rgba(217, 83, 79, 0.3); /* Adds a subtle glow */
+}
+
+/* Class Selector for highlighting special items */
+.special-dish {
+    color: #8c4646;
+    font-weight: bold;
+}
+
+/* Pseudo-class Selector: Targets the first letter of each dish name for a drop cap effect */
+.dish-name::first-letter {
+    font-size: 1.5em;
+    color: #8c4646;
+}
+
+/* Class Selector for prices: Makes them visually distinct */
+.price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #8c4646;
+    font-weight: bold;
+    text-align: right;
+    min-wid
+}
